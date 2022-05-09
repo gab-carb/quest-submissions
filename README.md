@@ -24,3 +24,23 @@ Chapter 1 - Day 2
 2.In your opinion, even without knowing anything about the Blockchain or coding, why could the 5 Pillars be useful (you don't have to answer this for #5):
 Having anyhing to do with the web, security is a must in todays world. When dealing with money, user infos, etc, if the code is design with safety and security in mind, it makes it even more easy for developpers to create a secure environment for it's users. If the develloppers can also easily debug it's makes it more effecient and quicker to get code working properly and safely. Since the code added to the blockchain is accessible to all, it's important that's it's clear and easy to understand for everyone. Also if it's easy more people can contribut to the flow blockchain.
 
+
+Chapter 2 - Day 1 - Our First Smart Contract
+
+Smart contract:
+pub contract JacobTucker {
+
+pub let is: String
+
+  init() {
+  self.is = "the best"
+  }
+}
+
+Script:
+import JacobTucker from 0x03
+
+pub fun main(): String {
+    return JacobTucker.is
+}
+
