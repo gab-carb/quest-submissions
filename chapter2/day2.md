@@ -1,24 +1,24 @@
 Chapter 2 Day 2 - Transactions and Scripts
 
-Explain why we wouldn't call changeGreeting in a script:
+-Explain why we wouldn't call changeGreeting in a script:
 
 Because a script is only used to read the data in the smart contract, so we can change anything.
 To change something we need to use a transaction.
 
 
-What does the AuthAccount mean in the prepare phase of the transaction?:
+-What does the AuthAccount mean in the prepare phase of the transaction?:
 
 Once a user confirms a transaction, AuthAccount is used to have access to the data in the user account, to confirm that the transaction can go thru. 
 
 
-What is the difference between the prepare phase and the execute phase in the transaction?:
+-What is the difference between the prepare phase and the execute phase in the transaction?:
 
 The prepare phase is used to access the data in the user account, before going forward with the transaction.
 The execute phase is used to change data on the blockchain. But to change anything in a transaction the codes needs to be written to allow it.
 The pepare and execute sections is there to seperate the code and make it more clear.
 
 
-Add two new things inside your contract:
+-Add two new things inside your contract:
 
 A variable named myNumber that has type Int (set it to 0 when the contract is deployed):
 A function named updateMyNumber that takes in a new number named newNumber as a parameter that has type Int and updates myNumber to be newNumber:
