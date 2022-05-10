@@ -15,7 +15,7 @@ Once a user confirms a transaction, AuthAccount is used to have access to the da
 
 The prepare phase is used to access the data in the user account, before going forward with the transaction.
 The execute phase is used to change data on the blockchain. But to change anything in a transaction the codes needs to be written to allow it.
-The pepare and execute sections is there to seperate the code and make it more clear.
+The pepare and execute sections is there to seperate the code and make it more clear for everyone.
 
 
 -Add two new things inside your contract:
