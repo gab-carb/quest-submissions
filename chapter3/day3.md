@@ -2,13 +2,11 @@ Chapter 3 Day 3 - References
 
 1.Define your own contract that stores a dictionary of resources. Add a function to get a reference to one of the resources in the dictionary.
 
-<img width="641" alt="Capture d’écran, le 2022-05-17 à 14 34 53" src="https://user-images.githubusercontent.com/104936636/168885801-b9d9281b-6a07-4810-a3b7-d2a55250d819.png">
-
+<img width="584" alt="Capture d’écran, le 2022-05-17 à 14 50 27" src="https://user-images.githubusercontent.com/104936636/168888549-faa7fd7c-df90-4025-9e5c-7ad0668134c6.png">
 
 2.Create a script that reads information from that resource using the reference from the function you defined in part 1.
 
-<img width="470" alt="Capture d’écran, le 2022-05-17 à 14 35 00" src="https://user-images.githubusercontent.com/104936636/168885809-9fe20601-bdd1-44bc-89af-a168891f5ac3.png">
-
+<img width="511" alt="Capture d’écran, le 2022-05-17 à 14 52 01" src="https://user-images.githubusercontent.com/104936636/168888567-9c8d10e8-64dc-4ce1-a219-bb9a662be75d.png">
 
 3.Explain, in your own words, why references can be useful in Cadence.
 
