@@ -2,7 +2,7 @@ Chapter 3 Day 4 - Resource/Struct Interfaces
 
 1.Explain, in your own words, the 2 things resource interfaces can be used for:
 
--Resource interfaces allows you to make a ressource conform to certain requirements defined by interface.
+-Resource interfaces allows you to make a ressource conform to certain requirements defined by the interface.
 
 -Resource interfaces also give you the ability to constrain resources to the parameters of the interface.
  Even making it impossible to access data from a resource within the bounderies of an interface.
