@@ -114,5 +114,5 @@ pub fun main() {
   // publicFunc = Yes
   // contractFunc = No
   // privateFunc = No
-  
+
 }
