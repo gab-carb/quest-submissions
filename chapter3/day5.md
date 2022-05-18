@@ -107,10 +107,10 @@ import SomeContract from 0x01
     /*** AREA 4 ***/
     /**************/
     
-    // a = Read/ No
-    // b = Read/ No
-    // c = No/ No
-    // d = No/ No
+    // a = Read/ No writing in a script
+    // b = Read/ No writing in a script
+    // c = No/ No writing in a script
+    // d = No/ No writing in a script
     // publicFunc = Yes
     // contractFunc = No
     // privateFunc = No
