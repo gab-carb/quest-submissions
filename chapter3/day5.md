@@ -102,17 +102,17 @@ This is a script that imports the contract above:
 
 import SomeContract from 0x01
 
-pub fun main() {
-  /**************/
-  /*** AREA 4 ***/
-  /**************/
-  
-  // a = Read/ Write
-  // b = Read/ No
-  // c = No/ No
-  // d = No/ No
-  // publicFunc = Yes
-  // contractFunc = No
-  // privateFunc = No
+    pub fun main() {
+     /**************/
+    /*** AREA 4 ***/
+    /**************/
+    
+    // a = Read/ No
+    // b = Read/ No
+    // c = No/ No
+    // d = No/ No
+    // publicFunc = Yes
+    // contractFunc = No
+    // privateFunc = No
 
-}
+    }
