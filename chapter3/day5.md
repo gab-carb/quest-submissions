@@ -34,6 +34,15 @@ access(all) contract SomeContract {
             /**************/
             /*** AREA 1 ***/
             /**************/
+            
+            // a = Read/ Write
+            // b = Read/ Write
+            // c = Read/ Write
+            // d = Read/ Write
+            // publicFunc = Yes
+            // contractFunc = Yes
+            // privateFunc = Yes
+            
         }
 
         init() {
@@ -51,6 +60,15 @@ access(all) contract SomeContract {
             /**************/
             /*** AREA 2 ***/
             /**************/
+            
+            // a = Read/ Write
+            // b = Read/ No
+            // c = Read/ No
+            // d = No/No
+            // e = Read/ Write
+            // publicFunc = Yes
+            // contractFunc = Yes
+            // privateFunc = No
         }
 
         init() {
@@ -66,6 +84,14 @@ access(all) contract SomeContract {
         /**************/
         /*** AREA 3 ****/
         /**************/
+        
+        // a = Read/ Write
+        // b = Read/ No
+        // c = Read/ No
+        // d = No/ No
+        // publicFunc = Yes
+        // contractFunc = Yes
+        // privateFunc = No
     }
 
     init() {
@@ -80,4 +106,13 @@ pub fun main() {
   /**************/
   /*** AREA 4 ***/
   /**************/
+  
+  // a = Read/ Write
+  // b = Read/ No
+  // c = No/ No
+  // d = No/ No
+  // publicFunc = Yes
+  // contractFunc = No
+  // privateFunc = No
+  
 }
