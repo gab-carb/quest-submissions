@@ -5,7 +5,7 @@ Chapter 3 Day 4 - Resource/Struct Interfaces
 -Resource interfaces allows you to make a ressource conform to certain requirements defined by the interface.
 
 -Resource interfaces also give you the ability to constrain resources to the parameters of the interface.
- Even making it impossible to access data from a resource within the bounderies of an interface.
+ Even making it possible to completly restrict the access to data from a resource.
  
 
 2.Define your own contract. Make your own resource interface and a resource that implements the interface. Create 2 functions. 
