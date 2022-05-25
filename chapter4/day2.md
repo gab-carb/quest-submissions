@@ -21,6 +21,7 @@ anything else outside of the interface will be avaible to the public.
 -Run a script that tries to access a non-exposed field in the resource interface, and see the error pop up.
 <img width="1014" alt="Capture d’écran, le 2022-05-25 à 16 20 33" src="https://user-images.githubusercontent.com/104936636/170362933-d9879c5f-d2e6-45be-97b2-69ae29af09eb.png">
 
+<img width="1003" alt="Capture d’écran, le 2022-05-25 à 16 41 02" src="https://user-images.githubusercontent.com/104936636/170363227-544c07ea-2186-4be4-bee7-f9c331c61b77.png">
 
 
 -Run the script and access something you CAN read from. Return it from the script.
