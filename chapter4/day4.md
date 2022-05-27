@@ -37,10 +37,12 @@ pub contract CryptoPoops {
   // This is a Collection resource that allows us to store all the NFTs to one storage path.
   pub resource Collection: CollectionPublic {
     pub var ownedNFTs: @{UInt64: NFT}
+    
     // This is a function that allows us to deposit an NTF resource to the collection.
     pub fun deposit(token: @NFT) {
       self.ownedNFTs[token.id] <-! token
     }
+    
     // This is a function that allows us to withdraw an NFT resource from the collection.
     // If there's no NFT it panics 
     pub fun withdraw(withdrawID: UInt64): @NFT {
@@ -48,10 +50,12 @@ pub contract CryptoPoops {
               ?? panic("This NFT does not exist in this Collection.")
       return <- nft
     }
+    
     // This is a function that returns an array of all the NFTs IDs in the collection.
     pub fun getIDs(): [UInt64] {
       return self.ownedNFTs.keys
     }
+    
     // This function allows us to read the NFT's metadata.
     pub fun borrowNFT(id: UInt64): &NFT {
       return &self.ownedNFTs[id] as &NFT
@@ -61,27 +65,33 @@ pub contract CryptoPoops {
     init() {
       self.ownedNFTs <- {}
     }
+    
     // This function is there so that when we destroy the collection it destroys all the resources inside the collection
     destroy() {
       destroy self.ownedNFTs
     }
   }
+  
   // This function saves the resource Collection to an empty collection
   pub fun createEmptyCollection(): @Collection {
     return <- create Collection()
   }
+  
   // This is a resource Minter that holds the minted NFT
   pub resource Minter {
+  
     // This function mints a new NFT resource with a name, favoriteFood and luckyNumber 
     pub fun createNFT(name: String, favouriteFood: String, luckyNumber: Int): @NFT {
       return <- create NFT(_name: name, _favouriteFood: favouriteFood, _luckyNumber: luckyNumber)
     }
+    
     // This function creates a the Minter resource and returns it.
     pub fun createMinter(): @Minter {
       return <- create Minter()
     }
 
   }
+  
   // This function initializes the Minter and save it to the account storage, meening that only the account that deployed the contract will have be able to mint NFTs
   init() {
     self.totalSupply = 0
