@@ -5,11 +5,11 @@ Chapter 5 Day 1 - Pre/Post Conditions & Events
 Events is a way to inform others when something happened with the contract, instead of having to constantly check the contract to see if something happened.
 
 2-Deploy a contract with an event in it, and emit the event somewhere else in the contract indicating that it happened:
-
+<img width="617" alt="Capture d’écran, le 2022-05-30 à 20 46 50" src="https://user-images.githubusercontent.com/104936636/171080757-efcf3ceb-dd1f-4bc1-ab29-c3e21c559f44.png">
 
 
 3-Using the contract in step 2), add some pre conditions and post conditions to your contract to get used to writing them out:
-
+<img width="549" alt="Capture d’écran, le 2022-05-30 à 21 55 34" src="https://user-images.githubusercontent.com/104936636/171080767-5b1cf738-c7a6-4354-8b8f-d854e9620fce.png">
 
 
 4-For each of the functions below (numberOne, numberTwo, numberThree), follow the instructions:
