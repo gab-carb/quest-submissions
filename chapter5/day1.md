@@ -21,6 +21,7 @@ pub contract Test {
   // TODO
   // Tell me whether or not this function will log the name.
   // name: 'Jacob'
+  
   // Answer: Yes it will log, since the name 'Jacob' is 5 caracters in length.
   pub fun numberOne(name: String) {
     pre {
@@ -32,6 +33,7 @@ pub contract Test {
   // TODO
   // Tell me whether or not this function will return a value.
   // name: 'Jacob'
+  
   // Answer: Yes this function returns "Jacob Tucker", since Jacob is greater than or equal to 0 in length. And since result is "Jacob Tucker".
   pub fun numberTwo(name: String): String {
     pre {
@@ -49,7 +51,9 @@ pub contract Test {
     // TODO
     // Tell me whether or not this function will log the updated number.
     // Also, tell me the value of `self.number` after it's run.
-    // Answer: No it doesn't log, because the post equation can't ever be right, so it panics. When it panics the value of `self.number` resets to 0.
+    
+    // Answer: No it doesn't log, because the post equation can't ever be right, so it panics. 
+    // When it panics the value of `self.number` resets to 0.
     pub fun numberThree(): Int {
       post {
         before(self.number) == result + 1
