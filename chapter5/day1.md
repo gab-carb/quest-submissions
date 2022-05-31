@@ -2,7 +2,7 @@ Chapter 5 Day 1 - Pre/Post Conditions & Events
 
 1-Describe what an event is, and why it might be useful to a client:
 
-Events is a way to inform others when something happened with the contract, instead of having to constantly check the contract to see if something happened.
+An event is a way to inform others when something happened with the contract, instead of having to constantly check the contract to see if something happened.
 
 2-Deploy a contract with an event in it, and emit the event somewhere else in the contract indicating that it happened:
 <img width="617" alt="Capture d’écran, le 2022-05-30 à 20 46 50" src="https://user-images.githubusercontent.com/104936636/171080757-efcf3ceb-dd1f-4bc1-ab29-c3e21c559f44.png">
@@ -22,7 +22,7 @@ pub contract Test {
   // Tell me whether or not this function will log the name.
   // name: 'Jacob'
   
-  // Answer: Yes it will log, since the name 'Jacob' is 5 caracters in length.
+  // Answer: Yes it will log, since the name 'Jacob' is exactly 5 caracters in length.
   pub fun numberOne(name: String) {
     pre {
       name.length == 5: "This name is not cool enough."
@@ -34,7 +34,8 @@ pub contract Test {
   // Tell me whether or not this function will return a value.
   // name: 'Jacob'
   
-  // Answer: Yes this function returns "Jacob Tucker", since Jacob is greater than or equal to 0 in length. And since result is "Jacob Tucker".
+  // Answer: Yes this function returns "Jacob Tucker", since Jacob is greater than or equal to 0 in length. 
+  // And since the result is "Jacob Tucker".
   pub fun numberTwo(name: String): String {
     pre {
       name.length >= 0: "You must input a valid name."
