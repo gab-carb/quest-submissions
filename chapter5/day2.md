@@ -47,7 +47,7 @@ The implementing contract:
     self.number = 5
   }
                                      //Remove local resource Interface.
-  pub resource Stuff: Itest.IStuff { //And implement the resource interface from the ITest contract interface.
+  pub resource Stuff: ITest.IStuff { //And implement the resource interface from the ITest contract interface.
     pub var favouriteActivity: String
 
     init() {
