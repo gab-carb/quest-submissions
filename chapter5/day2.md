@@ -44,7 +44,7 @@ The implementing contract:
     pub var number: Int
   
   pub fun updateNumber(newNumber: Int) {
-    self.number = 5
+    self.number = newNumber
   }
                                      //Remove local resource Interface.
   pub resource Stuff: ITest.IStuff { //And implement the resource interface from the ITest contract interface.
